@@ -4,7 +4,7 @@
 // object.create is also a way to create a object 
 
 //object literals 
-
+/*
 const mySym = Symbol("key1")
 
 
@@ -42,3 +42,5 @@ JsUser.greeting(){
 
 }
 console.log(JsUser.greeting);
+
+*/
