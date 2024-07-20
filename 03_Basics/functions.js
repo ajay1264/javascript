@@ -147,7 +147,7 @@ console.log(returnSecondValue(myNewArray));
 
                                
 
-
+*/
 
 
 
