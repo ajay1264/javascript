@@ -84,7 +84,7 @@ function loginUserMessage(username) {
 //console.log(loginUserMessage("ajay"));
 console.log(loginUserMessage());    // as we do not put any message inside the parenthesis we will get the value undefined
 
-*/
+
 
 //now how to use a if statment inside a function
 
@@ -97,6 +97,58 @@ function loginUserMessage(username = "ajay") {         //in this if the user did
     return `${username} just logged in `
 }
 console.log(loginUserMessage());                  // but if you put the value inside it then it will overwrite ajay and show the new value 
+
+
+
+
+              //function 2  
+
+//now ek shopping cart app hai aur apko pata nhi kitne carts main add honge and we have to add the price  this is how we do it 
+
+function calculatorCartPrice(...num1){      //now ... it is called as rest operator we can make the values come together as ARRAY
+//function calculatorCartPrice(val1, val2...num1){   // val1 will take 200 and val2 will 300  
+    return num1
+
+}
+console.log((calculatorCartPrice(200, 300, 400)));
+
+
+
+//object in functions how to run objects in function
+
+const user = {
+    username: "ajay",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Usename is ${anyobject.username} and price is ${anyobject.price}`);
+
+}
+//handleObject(user)   // <==this is the first way to get the obj 
+
+//we can also pass the direct object 
+
+handleObject({
+    username: "ajay",
+    price: 102
+})
+
+//we can also pass arrays in the function 
+
+const myNewArray = [200, 300, 400, 500]
+
+function returnSecondValue(getArray){
+    return getArray[3]
+}
+
+console.log(returnSecondValue(myNewArray));
+
+
+                               
+
+
+
 
 
 
