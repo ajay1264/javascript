@@ -34,7 +34,7 @@ if(true) {                                //!!!!!! learn it again by chatgpt
 }
 
 
-// intresting
+/* intresting
 
 function addone(num){    // this 
     return num + 1       // is  
@@ -61,3 +61,4 @@ console.log(addTwo(5));                 // in this it cannot access the addtwo- 
 const addTwo = function(num){     
 }                              
 
+*/
