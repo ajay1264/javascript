@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+<body style="background-color: aliceblue;">
+    <h2>Image</h2>
+    <div>
+        <ul id="images">
+            <li> <img width="200px" id="photoshop" src="" alt="photoshop"></li>
+            <li> <img width="200px" id="japan" src="" alt="japan"></li>
+            <li> <img width="200px" id="river" src="" alt="river"></li>
+            <li> <img width="200px" id="owl" src="" alt="owl"></li>   <!--yet this approach is not good in js but it can be in react //onClick="alert('owl')"-->
+            <li> <img width="200px" id="prayer" src="" alt="prayer"></li>
+            <li><a style="color: green;" href="https://google.com" id="google"> GOOGLE</a></li>
+        </ul>
+    </div>
+</body>
+<script> /*
+//usually images are always run sequentialy yet becaus of events like drag and click etc it can get the image as bcoz of some action 
+//there is a approach for that alert msg 
+document.getElementById('owl').addEventListener('click', function(e){
+   console.log(e);
+    //alert("owl clicked")
+});
+  /*below this also a way to write the alert msg   
+    //document.getElementById('owl').onclick = function (){alert("owl clicked")}
+    //console click on own you will find the e */
+
+ 
+
+/*imp to learn in events 
+/- type, timestamp, defaultPrevented, 
+/- target, toElement, srcElement, currentTarget,
+/- clientx, clientY, screenX, screenY
+/- altkey, ctrlkey, shiftkey, keycode   
+
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log("clicked inside the ul");
+},false)   //[false] called as event bubbling [true] is called as event capturing this both are event propogation
+
+
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log(" owl clicked");
+},false)   //as bubbling in which the chote se bade ki taraf jayega 
+
+
+
+
+//now we will see with true 
+//inthis it will go from bahar to andar 
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log("clicked inside the ul");
+// },true)   //
+
+
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log(" owl clicked");
+//     e.stopPropagation()     //using this we can stop propogation 
+// },true)   //
+
+//preventDefault
+//in this we will see the google word after clicking on it will redirect to that site to avoid that we use preventDefaulter
+
+document.getElementById('google').addEventListener
+('click',function(e){
+     e.preventDefault()
+     console.log("google clicked");
+ 
+}, false)
+
+*/
+
+//now if you click on the image and the image will be deleted
+document.querySelector('#images').addEventListener
+('click', function(e){
+    console.log(e.target.parentNode);
+    let removeIt = e.target.parentNode
+
+if(e.target.tagName === 'IMG'){
+    console.log(e.target.id);
+    let removeIt = e.target.parentNode
+    removeIt.remove()
+}
+
+    
+    //
+    //removeIt.parentNode.removeChild(removeIt)
+})
+
+
+
+
+
+
+
+</script>
+</html>
