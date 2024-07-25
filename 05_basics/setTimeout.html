@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+  
+  /*
+  //this is a settimeout function declaration 
+  setTimeout(function() {     //settimeout means the action will run only one time after the execution at the set time 
+        console.log("ajay");
+    },2000)
+  
+*/
+// now putting in a const 
+     const sayAjay = function(){
+        console.log("Ajay");
+     }
+
+    // setTimeout(sayAjay,2000)
+
+
+//now can we change the h1 to best course
+
+const changeText = function(){
+document.querySelector('h1').innerHTML="best course"
+
+}
+//setTimeout(changeText,2000)
+
+//in this it will stop from changing h1 to text as the stop button is clicked 
+const changeMe = setTimeout(changeText,2000)
+document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)         //clear timeout need refernce to stop as there are multiple timeouts so we have to give the reference as in this it is with the variable changeme
+    console.log("STOP");
+})
+
+
+</script>
+</html>
