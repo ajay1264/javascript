@@ -1,0 +1,148 @@
+
+<!-- dom manipulation --brendan eich founder of js
+
+checkout google=>wiki of brendan eich=> inspect =>console => console.log(document)=>also there are something that is hidden to access it console.dir(document) 
+
+
+
+         [window]
+           ||
+        [document]
+           ||
+        [HTML] 
+           |-----------------
+                   |
+          |                 |
+      (Head)             (Body) 
+  |         |              |
+  (title)    (meta)           (div)   -child
+  |                           |   |     
+  (text node)    attribute-(h1)   (p) -text node
+                          |
+                     (text node)
+
+
+//            -----------CSS SELECTORS --------------- 
+document.getElementById("title')
+title        
+title.textContent                   //as it will show all the text which is hidden or not shown 
+'DOM learning on chai aur code '
+title.innerText                   //it will hide the text and show only which is show 
+'DOM learning on chai aur code'
+title.innerHtml                    //it will show the html tags also 
+'DOM learning on chai aur code'
+
+ 
+document.querySelector('h2')   //this query will give you the particular 
+<h2>​hii​</h2>​
+document.querySelector('#title')     //this will give you the id
+<h1 id=​"title" class=​"heading">​…​</h1>​
+document.querySelector('.heading')     //this will give you the class
+<h1 id=​"title" class=​"heading">​"DOM learning on chai aur code "<span style=​"display:​ none;​">​ test text ​</span>​</h1>​
+
+('ul')
+<ul>​…​</ul>​
+const myul = document.querySelector('ul')
+undefined
+myul.querySelector('li')
+<li>​…​</li>​
+const turnGreen = myul.querySelector('li')
+undefined
+turnGreen.style.backgroundColor = 'green'
+'green'
+turnGreen.style.paddingBlock = '150dx'
+'150dx'
+turnGreen.innerText
+'one'
+turnGreen.innerText ='five'
+'five'
+ 
+
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeList
+const tempList = document.querySelectorAll('li')
+undefined
+tempList
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+tempList[0].style.color = 'green'
+'green'
+
+document.querySelectorAll('h1')
+undefined
+myh1
+NodeList [h1#title.heading]
+myh1[0].style.color = 'yellow'
+'yellow'
+const para = document.querySelectorAll('p')
+undefined
+para
+NodeList [p]
+para[0].style.backgroundColor = 'pink'
+'pink'
+const newul = document.querySelectorAll('ul')
+undefined
+newul[0].style.backgroundColor = 'blue'
+'blue'
+const templi = document.querySelectorAll('ul')
+undefined
+const templi = document.querySelectorAll('li')
+undefined
+templi[0].style.color = 'purple'
+'purple'
+templi[0].style.color = 'orange'
+'orange'
+templi[2].style.color = 'green'
+'green'
+
+// 
+
+
+
+
+
+
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    <style>
+        .bg-black  {
+        background-color: #212121;
+         color: #fff;}
+
+</style>
+</head>
+<body class="bg-black">
+    
+    <div >
+        <h1 id="title" class="heading" >DOM learning on chai aur code
+        <span style="display: none;"> test text </span>     </h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>hii</h2>
+        <h3>wasssup</h3>
+        
+
+<ul>
+    <li class=" list-items">one</li>
+    <li class=" list-items">two</li>
+    <li class=" list-items">three</li>
+    <li class=" list-items">four</li>
+</ul>
+
+
+
+
+
+
+
+
+    </div>
+    </style>
+    
+</body>
+</html>
