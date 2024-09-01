@@ -60,7 +60,7 @@ o/p:
 
 let someMNumber =33 
 
-let stringNumber = Sftring(someNumber)
+let stringNumber = String(someNumber)
 console.log(stringNumber);
 console.log(typeof stringNumber);
 

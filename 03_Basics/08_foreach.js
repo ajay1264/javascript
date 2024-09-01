@@ -1,7 +1,17 @@
 
+
 //  -------------------loops-on-obj/array-------------loopobj.js
 
 // loops in obj 
+
+
+//it will check the index value then it will go for the index is < > than 10 than it will go to the console then it print the value then before exiting from the block it will go to index ++ then again repeat the process
+
+// for (let i = 0; i <= 10; i++) {
+//     const element = array[i];
+    
+// }
+
 //for in loop in object 
 const myObject = {
     js: 'javascript',

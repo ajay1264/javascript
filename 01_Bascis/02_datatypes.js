@@ -1,6 +1,7 @@
 // "use strict"; yeh syntax se code ko as a newer version treaat kiya jayega
 // alert(3+3) error show karega kyuki ye node main run ho rah hai browser main nhi 
 //ecma script documentation original tc39 aur mdn
+//
 // lets discuss datatype
 
 let name = "ajay"
@@ -20,3 +21,5 @@ let isLoggedIn = false
 //object
 //jab bhi null ko execute karte hai tab uski value object hoti hai 
 //aur jab undefined ko execute karenge tab uski value undefined hi rehti hai 
+
+//console.log(typeof null) => object

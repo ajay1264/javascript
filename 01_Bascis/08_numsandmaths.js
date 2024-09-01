@@ -31,7 +31,7 @@ console.log(Math.max(5,6,6,7,8,9)); //it will give the biggest num in the list
 */
 
 //Returns a pseudorandom number between 0 and 1.
-console.log((Math.random()*10)+1);
+// console.log((Math.random()*10)+1);
 
 const min = 10 
 const max =20

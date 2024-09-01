@@ -5,21 +5,23 @@ checkout google=>wiki of brendan eich=> inspect =>console => console.log(documen
 
 
 
-         [window]
-           ||
-        [document]
-           ||
-        [HTML] 
-           |-----------------
-                   |
+                 [window]
+                 ||
+              [document]
+                  ||
+                [HTML] 
+                   |-----------------
+                  |
+
           |                 |
       (Head)             (Body) 
-  |         |              |
-  (title)    (meta)           (div)   -child
-  |                           |   |     
-  (text node)    attribute-(h1)   (p) -text node
-                          |
-                     (text node)
+  |           |              |
+  (title)    (meta)        (div)-(attribute)  -child
+  |            |             
+ |             |          |              |     
+  (text node)       (attribute)-h1   (p) -text node
+           attribute      |
+                      (text node)
 
 
 //            -----------CSS SELECTORS --------------- 

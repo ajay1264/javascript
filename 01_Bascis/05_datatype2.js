@@ -1,6 +1,6 @@
 // primitive data type
 
-// 7 types :String , Number , Boolean, null , Undefined, Symbol , Biginy
+// 7 types :String , Number , Boolean, null , Undefined, Symbol , Bigint
 
 //const score = 100
 //const scoreValue = 100.3
